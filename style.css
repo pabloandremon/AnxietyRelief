@@ -1,0 +1,298 @@
+*{
+    border: none;
+}
+body {
+    margin: 0 auto;
+    overflow-x: hidden;    
+    background-color: #D7ECD9;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.zone {
+    /*padding:30px 50px;*/
+    /*cursor:pointer;*/
+    color:#484349;
+    font-size:2em;    
+    transition: all 0.3s linear;
+}
+
+/* .box:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} */
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #484349;
+    text-decoration: none;
+}
+    
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.container {
+    /*show heigh: auto*/     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;        
+}
+.cover {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;    
+}
+.cover-image {
+    width: 50%;    
+}
+.caption1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    /* background-color: rgba(72, 67, 73, 1); */
+    border-radius: 2vh;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2em;
+    color: rgba(72, 67, 73, 1);
+    
+}
+.caption2{
+    font-size: 0.6em;
+}
+
+@media only screen and (max-width: 900px) {
+    .cover-image {
+        width: 60%;    
+    }
+    .caption1 {
+        width: 90%;
+        font-size: 0.7em;
+    }
+}
+/***********************************************************************
+ *  Breath in Breath out
+ **********************************************************************/
+ #btn {
+    margin: 5vh;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 2rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+ }
+ 
+ #btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+ }
+ 
+ #btn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+ }
+ .breathe{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 20vh;
+ }
+ .center {   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    Transform: translate();
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50vh;
+    background-color: rgba(0,0,255,0.8);    
+    animation: animate 12s linear infinite;
+    
+}
+@keyframes animate {
+    0%
+    {
+        box-shadow:rgba(0,0,255,0.1) 0 0 0 15px, rgba(0,0,255,0.1) 0 0 0 30px, rgba(0,0,255,0.1) 0 0 0 45px,
+        rgba(0,0,255,0.1) 0 0 0 60px, rgba(0,0,255,0.1) 0 0 0 75px;
+    }
+    50%
+    {
+        box-shadow:rgba(0,0,255,0.1) 0 0 0 25px, rgba(0,0,255,0.1) 0 0 0 50px, rgba(0,0,255,0.1) 0 0 0 75px,
+        rgba(0,0,255,0.1) 0 0 0 100px, rgba(0,0,255,0.1) 0 0 0 125px;
+    }
+    100%
+    {
+        box-shadow:rgba(0,0,255,0.1) 0 0 0 15px, rgba(0,0,255,0.1) 0 0 0 30px, rgba(0,0,255,0.1) 0 0 0 45px,
+        rgba(0,0,255,0.1) 0 0 0 60px, rgba(0,0,255,0.1) 0 0 0 75px;
+    }
+}
+.breathe > p {
+    text-align: center;
+    font-size: 4vw;
+}
+.breatheText1 {    
+    padding-bottom: 19vh;
+}
+.breatheText2 {    
+    padding-top: 19vh;
+}
+@media only screen and (max-width: 600px) {
+    .center {   
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+        Transform: translate();
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50vh;
+        background-color: rgba(0,0,255,0.8);    
+        animation: animate 12s linear infinite;
+        
+    }
+
+    @keyframes animate {
+        0%
+        {
+            box-shadow:rgba(0,0,255,0.1) 0 0 0 5px, rgba(0,0,255,0.1) 0 0 0 20px, rgba(0,0,255,0.1) 0 0 0 35px,
+            rgba(0,0,255,0.1) 0 0 0 50px, rgba(0,0,255,0.1) 0 0 0 65px;
+        }
+        50%
+        {
+            box-shadow:rgba(0,0,255,0.1) 0 0 0 15px, rgba(0,0,255,0.1) 0 0 0 40px, rgba(0,0,255,0.1) 0 0 0 65px,
+            rgba(0,0,255,0.1) 0 0 0 90px, rgba(0,0,255,0.1) 0 0 0 115px;
+        }
+        100%
+        {
+            box-shadow:rgba(0,0,255,0.1) 0 0 0 5px, rgba(0,0,255,0.1) 0 0 0 20px, rgba(0,0,255,0.1) 0 0 0 35px,
+            rgba(0,0,255,0.1) 0 0 0 50px, rgba(0,0,255,0.1) 0 0 0 65px;
+        }
+    }
+}
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));   
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    
+}
+.box {    
+    border: none;
+    background-color: transparent;
+    padding: 40px;
+    margin: 0px;
+    text-align: center;
+    width: 80%;
+}
+@media only screen and (max-width: 600px) {
+    
+    .box {        
+        border: none;
+        background-color: transparent;
+        padding: 15px;
+        margin: 0px;
+        text-align: center;
+        font-size: 9vw;
+        width: 50%;
+    }
+}
+audio {
+    width: 50%;    
+    
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+    text-align: center;
+    padding: 3%;
+}
+footer > span {
+    font-size: 0.7em;
+}
+@media only screen and (max-width: 600px) {
+    footer > span {
+        font-size: 0.5em;
+    }
+}
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+
+/***********************************************************************
+ *  Color
+ **********************************************************************/
+body {
+    background: #D7ECD9; /* Old browsers */
+    background: -moz-linear-gradient(top, #D7ECD9 0%, #D7ECD9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D7ECD9), color-stop(100%,#D7ECD9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #D7ECD9 0%,#D7ECD9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #D7ECD9 0%,#D7ECD9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #D7ECD9 0%,#D7ECD9 100%); /* IE10+ */
+    background: linear-gradient(top, #D7ECD9 0%,#D7ECD9 100%); /* W3C */
+}
+footer {
+    background: #484349; /* Old browsers */
+    background: -moz-linear-gradient(top, #484349 0%, #484349 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#484349), color-stop(100%,#484349)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #484349 0%,#484349 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #484349 0%, #484349 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #484349 0%,#484349 100%); /* IE10+ */
+    background: linear-gradient(top, #484349 0%,#484349 100%); /* W3C */
+}
+

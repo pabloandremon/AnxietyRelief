@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnxietyRelief</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <nav class="zone">
+    <ul class="main-nav">
+        <li><a href="">AnxietyRelief</a></li>        
+        <li class="push"><a href="">About</a></li>
+    </ul>
+  </nav>
+  <div class="container zone">
+    <div class="cover">
+      <img class="cover-image" src="img/cover-backgroud.png" alt="">
+      <p class="caption1">Feeling anxious or nervous? <br> Is life stressing you out? <br>
+        <span class="caption2">You deserve to take a moment to breathe and relax with these calming sounds...</span> 
+      </p>
+    </div>
+  </div>
+  <div class="zone grid-wrapper">
+    <div class="box zone text">
+      <span>Rain</span><br>
+      <audio controls><source src="audio/rain.mp3" type="audio/mp3">browser do not support the audio element</audio>
+    </div>
+
+    <div class="box zone text">
+      <span>Birds</span><br>
+      <audio controls><source src="audio/birds.mp3" type="audio/mp3">browser do not support the audio element</audio>
+    </div>
+
+    <div class="box zone text">
+      <span>Ocean</span><br>
+      <audio controls><source src="audio/beach.mp3" type="audio/mp3">browser do not support the audio element</audio>
+    </div>
+
+    <div class="box zone text">
+      <span>Sand</span><br>
+      <audio controls><source src="audio/sand.mp3" type="audio/mp3">browser do not support the audio element</audio>
+    </div>
+
+    <div class="box zone text">
+      <span>Typing</span><br>
+      <audio controls><source src="audio/typing.mp3" type="audio/mp3">browser do not support the audio element</audio>
+    </div>
+
+    <div class="box zone text">
+      <span>Papers</span><br>
+      <audio controls><source src="audio/PageTurning.mp3" type="audio/mp3">browser do not support the audio element</audio>
+    </div>        
+  </div>  
+  <div class="container"><button id="btn" href="#" data-toggle="tooltip" title="Start breathing exercise">Breath Ball</button></div>
+  <div class="breathe" id="breathe">
+    <p class="breatheText1">Breathe Slowly:</p>
+    <div class="center"></div>
+    <p class="breatheText2">In & Out</p>
+  </div>
+  <footer class="zone"><span style="color: white;">Made with <span style="color: #ff6961;">LOVE</span> by Pablo Montes</span></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
